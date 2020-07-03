@@ -1,0 +1,142 @@
+/* port status get */
+#define PORT_SPEED_GET 	        0
+#define PORT_LINK_GET 	        1
+#define PORT_DUPLEX_GET 		102
+
+/* port Statistics get */
+#define PORT_Statis_GET 	    3
+#define InUcast         0
+#define InMulticast     1
+#define InBroadcast     2
+#define InError         3
+#define OutUcast        4
+#define OutMulticast    5
+#define OutBroadcast    6
+#define OutError        7
+
+//in bcmutils.h
+//#define TxOctets        10
+//#define TxBroadcastPkts 12
+//#define TxMulticastPkts 13
+//#define TxUnicastPkts 14
+//#define TxCollisions 15
+//#define TxDropPkts 16
+//#define TxSingleCollision 17
+//#define TxMultipleCollision 18
+//#define TxDeferredTransmit 19
+//#define TxLateCollision 20
+//#define TxExcessiveCollision 21
+//#define TxPausePkts 22
+//#define TxFrameInDisc 23
+//
+//#define RxOctets 50
+//#define RxAlignmentErrors 51
+//#define RxFCSErrors 52
+//#define RxUnicastPkts 53
+//#define RxMulticastPkts 54
+//#define RxBroadcastPkts 55
+//#define RXSymbolError 56
+//#define RxDropPkts 57
+//#define RxOversizePkts 58
+//#define RxUndersizePkts 59
+//#define RxFragments 60
+//#define RxJabbers 61
+//#define Pkts64Octets 62
+//#define Pkts65to127Octets 63
+//#define Pkts128to255Octets 64
+//#define Pkts256to511Octets 65
+//#define Pkts512to1023Octets 66
+//#define Pkts1024to1522Octets 67
+//#define RxGoodOctets 68
+//#define RxPausePkts 69
+//#define RxExcessSizeDisc 70
+
+/* all mac list */ 
+#define MAC_LIST_GET 		    4
+
+/* port status set */
+#define PORT_STAT_GET           5
+#define PORT_TYPE_SET 		    6
+#define PORT_STAT_SET           7
+
+///* trunk */
+#define TRUNK_SET 		        8
+#define TRUNK_DEL 	            9
+
+/* vlan entry, pvid*/
+#define VLAN_PVID_GET 		    10
+#define VLAN_PVID_SET 		    11
+#define VLAN_SET 		        12
+#define VLAN_DEL 		        13
+#define VLAN_GET	            14
+#define VLAN_DEL_ALL	        15
+
+/* mac deal: get, add, del */
+#define MAC_STATIC_ADD 	        16
+#define MAC_STATIC_DEL	        17
+#define MAC_STATIC_GET          18
+#define MAC_DEL_BY_PORT	        19
+
+
+///* rstp */
+#define SET_PORT_STP_STATUS     20
+#define GET_PORT_STP_STATUS	    21
+#define PORT_BPDU_ENABLE	    22
+#define BPDU_MAC_MODIFY		    23
+#define PORT_TX_ENABLE	        24
+#define GET_SWITCH_LINK	        25
+
+/* rate control */
+#define RATE_INGRESS_GET        28
+#define RATE_INGRESS_SET        29
+
+/* storm */
+#define STORM_GET               30
+#define STORM_SET               31
+
+/* advanced mac */
+#define MAC_LIMIT               40
+#define PORT_AUTH_SET           41
+#define PORT_AUTH_GET           42
+#define MAC_AUTH_ADD            43
+#define MAC_AUTH_DEL            44
+
+#define GET_LINK	            45
+#define PORT_DUMP               46
+#define MIRROR_SET              47
+#define MULMAC_LIST_GET         48
+#define MULMAC_ADD_PORT         49
+#define MULMAC_ADD_PMAP         50
+#define MULMAC_DEL_ALL          51
+#define MULMAC_DEL_ADDR         52
+#define IGMP_SNOOP_SET          53
+#define TRUNK_SET_PORT          54
+#define PORT_PHY_RESET          55
+#define LED_INIT                56
+
+/* QOS */
+#define COSQ_SCHED_SET          61
+#define COSQ_SCHED_GET          62 
+#define COSQ_MAPPING_SET        63
+#define COSQ_MAPPING_GET        64
+#define COSQ_INIT               65
+#define PORT_COSQ               66
+
+#define I2C_READ                71
+#define I2C_WRITE               72
+#define CCTV_MODE               73
+
+#define RATE_EGRESS_GET         75
+#define RATE_EGRESS_SET         76
+
+/* storm control */
+#define STORM_BCAST             78
+#define STORM_MCAST             79
+#define STORM_UCAST             80
+
+#define TRUNK_DEL_ALL           85
+
+#define RTC_READ                90
+#define RTC_WRITE               91
+#define TEMPERATURE             92
+
